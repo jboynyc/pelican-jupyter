@@ -100,6 +100,10 @@ def get_html_from_filepath(
                 "highlight_class": ".highlight-ipynb",
             },
             "SubCell": {"enabled": True, "start": start, "end": end},
+            "TemplateExporter": {
+                "exclude_input_prompt": False,
+                "exclude_output_prompt": True,
+            },
         }
     )
 
